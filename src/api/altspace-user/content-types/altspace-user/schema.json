@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "altspace_users",
+  "info": {
+    "singularName": "altspace-user",
+    "pluralName": "altspace-users",
+    "displayName": "Altspace User"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "altspace_id": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "unique": true
+    },
+    "is_member": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "member_assets",
+  "info": {
+    "singularName": "member-asset",
+    "pluralName": "member-assets",
+    "displayName": "MemberAsset"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "altspace_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::altspace-user.altspace-user"
+    },
+    "wearable_assets": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::wearable-asset.wearable-asset"
+    }
+  }
+}

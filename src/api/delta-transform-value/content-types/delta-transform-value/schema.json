@@ -1,0 +1,40 @@
+{
+  "kind": "singleType",
+  "collectionName": "delta_transform_values",
+  "info": {
+    "singularName": "delta-transform-value",
+    "pluralName": "delta-transform-values",
+    "displayName": "DeltaTransformValues"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "x": {
+      "type": "float",
+      "default": 1,
+      "required": true
+    },
+    "y": {
+      "type": "float",
+      "default": 1,
+      "required": true
+    },
+    "z": {
+      "type": "float",
+      "default": 1,
+      "required": true
+    },
+    "scaleUp": {
+      "type": "float",
+      "required": true,
+      "default": 102564
+    },
+    "scaleDown": {
+      "type": "float",
+      "required": true,
+      "default": 975
+    }
+  }
+}

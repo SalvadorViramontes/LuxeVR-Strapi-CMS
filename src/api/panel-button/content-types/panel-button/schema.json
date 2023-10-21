@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "panel_buttons",
+  "info": {
+    "singularName": "panel-button",
+    "pluralName": "panel-buttons",
+    "displayName": "PanelButton"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "button": {
+      "type": "component",
+      "repeatable": false,
+      "component": "types.asset-transform"
+    }
+  }
+}

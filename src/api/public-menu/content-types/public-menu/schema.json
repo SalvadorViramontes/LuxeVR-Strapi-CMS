@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "public_menus",
+  "info": {
+    "singularName": "public-menu",
+    "pluralName": "public-menus",
+    "displayName": "PublicMenu"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "displayName": {
+      "type": "string",
+      "required": true
+    },
+    "resourceName": {
+      "type": "string",
+      "required": true
+    },
+    "menu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "types.asset-transform"
+    },
+    "mainButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "types.asset-transform"
+    },
+    "desktopMemberButton": {
+      "type": "component",
+      "repeatable": false,
+      "component": "types.asset-transform"
+    }
+  }
+}

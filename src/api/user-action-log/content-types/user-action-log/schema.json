@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_action_logs",
+  "info": {
+    "singularName": "user-action-log",
+    "pluralName": "user-action-logs",
+    "displayName": "UserActionLog"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "altspace_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::altspace-user.altspace-user"
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

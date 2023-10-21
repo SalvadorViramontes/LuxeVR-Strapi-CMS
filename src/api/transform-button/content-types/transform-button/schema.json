@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "transform_buttons",
+  "info": {
+    "singularName": "transform-button",
+    "pluralName": "transform-buttons",
+    "displayName": "TransformButtons"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "displayName": {
+      "type": "string",
+      "required": true
+    },
+    "resourceName": {
+      "type": "string",
+      "required": true
+    },
+    "publicMenu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "types.asset-transform",
+      "required": true
+    },
+    "memberMenu": {
+      "type": "component",
+      "repeatable": false,
+      "component": "types.asset-transform",
+      "required": true
+    },
+    "buttons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "types.asset-transform",
+      "required": true
+    }
+  }
+}

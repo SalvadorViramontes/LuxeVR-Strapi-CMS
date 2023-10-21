@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_custom_asset_transforms",
+  "info": {
+    "singularName": "user-custom-asset-transform",
+    "pluralName": "user-custom-asset-transforms",
+    "displayName": "UserCustomAssetTransform"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "altspace_user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::altspace-user.altspace-user"
+    },
+    "wearable_asset": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::wearable-asset.wearable-asset"
+    },
+    "customAssetTransform": {
+      "type": "component",
+      "repeatable": false,
+      "component": "types.asset-transform",
+      "required": true
+    }
+  }
+}
